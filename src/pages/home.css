@@ -1,0 +1,23 @@
+#headerdiv {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 8rem;
+}
+
+#root {
+    max-width: 960px;
+    width: 100%;
+    margin: auto 0;
+    padding: 0 1rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: auto;
+}
