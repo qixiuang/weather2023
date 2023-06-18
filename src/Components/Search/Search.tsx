@@ -26,29 +26,7 @@ function getLocation() {
         });
 }
 
-// https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
-
-function getTemperatureDetailsLongLat(longitude: number, latitude:number) {
-  $.ajax({
-      url: "http://api.openweathermap.org/data/3.0/onecall",
-      type: "GET",
-      dataType: "JSON",
-      data: {
-          lat: latitude,
-          lon: longitude,
-          appid: "91f93a5007bc09ef2250199c5d950fa6"
-      },
-      success: function(data) {
-          alert(data);
-      },
-      error: function(data, textStatus, errorThrown) {
-          //Do Something to handle error
-          alert(textStatus);
-      }
-  });
-}
-
-
+// to keep for history purpose
 function preprocessData(data:any, searchHistory: any) {
   var newarr = [];
   var newobj : any = {}
